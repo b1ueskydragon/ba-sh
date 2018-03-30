@@ -4,22 +4,25 @@
 #To execute . fetch_rebase.sh 
 #変数宣言スペース入れない
 
-py_b="PythonGround"
-echo ${py_b}":"
-cd ~/${py_b}/
-git fetch origin
-git rebase origin/master
+PY_B="PythonGround"
+JV_B="PlayGround"
+SQ_B="ScalaQuiz"
 
-jv_b="PlayGround"
-echo ${jv_b}":"
-cd ~/${jv_b}/
-git fetch origin
-git rebase origin/master
+BRANCHES=(
+${PY_B} 
+${JV_B} 
+${SQ_B} 
+)
 
-sq_b="ScalaQuiz"
-echo ${sq_b}":"
-cd ~/${sq_b}/
-git fetch origin
-git rebase origin/master
+echo $LF
+for branch in ${BRANCHES[@]}
+do
+ echo "["$branch"]:"
+ cd ~/$branch/
+ git fetch origin
+ git rebase origin/master
+ git status
+ echo $LF
+done
 
 cd ~/
