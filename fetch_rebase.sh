@@ -22,12 +22,17 @@ ${BS_B}
 echo $LF
 for branch in ${BRANCHES[@]}
 do
- echo "["$branch"]:"
- cd ~/$branch/
- git fetch origin
- git rebase origin/master
- git status
- echo $LF
+ if [ -d ~/$branch ]; then
+  echo "["$branch"]:"
+  cd ~/$branch/
+  git fetch origin
+  git rebase origin/master
+  git status
+ else 
+  echo "["$branch"]:" 
+  echo "not exists."
+ fi 
+  echo $LF
 done
 
 cd ~/
