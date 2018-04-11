@@ -1,0 +1,8 @@
++task:
+  for_each>:
+    log: [a, b]
+    value: [1, 2]
+
+  _do:
+    +task:
+      echo>: ${log} ${value}
