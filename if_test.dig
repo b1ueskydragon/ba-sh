@@ -1,0 +1,4 @@
++task:
+ if>: ${param}
+ _do:
+  echo>: "If param is true, I will say Hello"
