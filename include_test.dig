@@ -1,0 +1,18 @@
+_export:
+ !include : 'incl/flag.dig'
+
++task:
+ _parallel: true
+ for_each>:  
+   log: [A, B, C]
+ _do:
+  echo>: ${log}"is printing"
+
++task_another:
+  if>: ${flag.param}
+  _do:
+    _parallel: true
+    for_each>:
+      log:  [A, B, C]
+    _do:
+      echo>: ${log}"is printing_if param=true"
