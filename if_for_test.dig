@@ -1,0 +1,15 @@
++task:
+ _parallel: true
+ for_each>:  
+   log: [A, B, C]
+ _do:
+  echo>: ${log}"is printing"
+
++task_another:
+  if>: ${param}
+  _do:
+    _parallel: true
+    for_each>:
+      log:  [A, B, C]
+    _do:
+      echo>: ${log}"is printing_if param=true"
