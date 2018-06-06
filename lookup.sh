@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# crontab -e
+# * 7 * * * . lookup.sh
+
 target=test_$(date "+%Y%m%d")_01
 END=6
 
@@ -9,8 +12,8 @@ do
 		echo "There is it"
 		break
 	else
-		echo "wait.."
-		sleep 3
+		echo "waiting.."
+		sleep 600
 		continue
 	fi
 done
