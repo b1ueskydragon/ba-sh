@@ -10,6 +10,7 @@ SC_B="ScalaGround"
 JS_B="JavaScriptGround"
 BS_B="ba-sh"
 TD_B="ssh-td-transfer"
+TD_P="py-td-transfer"
 
 BRANCHES=(
 ${PY_B} 
@@ -19,6 +20,7 @@ ${SC_B}
 ${JS_B} 
 ${BS_B}
 ${TD_B}
+${TD_P}
 )
 
 echo $LF
