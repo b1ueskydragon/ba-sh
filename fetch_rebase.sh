@@ -2,6 +2,7 @@
 
 #To execute
 #. fetch_rebase.sh 
+# TODO: Replace current to find branch
 
 PY_B="PythonGround"
 JV_B="PlayGround"
@@ -31,9 +32,9 @@ do
  echo "["$branch"]:"
  if [ -d ~/$branch ]; then
   cd ~/$branch/
-  git fetch origin
-  git rebase origin/master
+  git pull origin master
   git status
+  git push origin master
  else 
   echo "not exists."
  fi 
