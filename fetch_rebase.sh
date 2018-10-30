@@ -32,7 +32,7 @@ do
  echo "["$branch"]:"
  if [ -d ~/$branch ]; then
   cd ~/$branch/
-  git pull origin master
+  git pull --rebase origin master
   git status
   git push origin master
  else 
