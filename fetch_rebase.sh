@@ -12,6 +12,7 @@ JS_B="JavaScriptGround"
 BS_B="ba-sh"
 TD_B="ssh-td-transfer"
 HA_B="HaskellGround"
+YE_B="yearinpixel"
 
 BRANCHES=(
 ${PY_B} 
@@ -22,6 +23,7 @@ ${SC_B}
 ${JS_B} 
 ${BS_B}
 ${TD_B}
+${YE_B}
 )
 
 echo $LF
