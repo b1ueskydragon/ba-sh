@@ -8,6 +8,7 @@ PY_B="PythonGround"
 JV_B="PlayGround"
 SQ_B="ScalaQuiz"
 SC_B="ScalaGround"
+AK_B="akka-http-auth-api"
 JS_B="JavaScriptGround"
 BS_B="ba-sh"
 TD_B="ssh-td-transfer"
@@ -18,7 +19,8 @@ BRANCHES=(
 ${PY_B} 
 ${HA_B}
 ${JV_B} 
-${SQ_B} 
+${SQ_B}
+${AK_B}
 ${SC_B} 
 ${JS_B} 
 ${BS_B}
