@@ -9,6 +9,7 @@ JV_B="PlayGround"
 SQ_B="ScalaQuiz"
 SC_B="ScalaGround"
 AK_B="akka-http-auth-api"
+CA_B="scala-cats"
 JS_B="JavaScriptGround"
 BS_B="ba-sh"
 TD_B="ssh-td-transfer"
@@ -21,6 +22,7 @@ ${HA_B}
 ${JV_B} 
 ${SQ_B}
 ${AK_B}
+${CA_B}
 ${SC_B} 
 ${JS_B} 
 ${BS_B}
