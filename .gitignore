@@ -1,3 +1,5 @@
 # digdag run
 .digdag/
 
+# editor
+.idea/
