@@ -1,2 +1,0 @@
-digdag run for_test.dig --session "yyyy-mm-dd hh:mm:ss"
-digdag run if_test.dig --session "2018-04-17 00:00:00" -p param=true
